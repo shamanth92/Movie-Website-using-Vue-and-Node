@@ -213,8 +213,7 @@ router.delete("/watchlistTv/:id", async (req, res) => {
   res.send({ status: true, msg: "TV removed from the list" });
 });
 
-const url =
-  "mongodb+srv://shamanthkumar:Sham1992@cluster0.yhokjnx.mongodb.net/?retryWrites=true&w=majority";
+const url = "";
 
 (async () => {
   let client = await MongoClient.connect(url, { useNewUrlParser: true });
